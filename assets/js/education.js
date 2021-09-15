@@ -5,65 +5,40 @@ AOS.init();
 const moocs = document.querySelector(".moocs");
 const moocscards = [
   {
-    title: "Data Science",
-    cardImage: "assets/images/education-page/coursera1.png",
-    moocLink: "https://www.coursera.org/browse/data-science",
+    title: "Engineering: Undergraduate and Masters Asia virtual Experience Program",
+    cardImage: "assets/images/education-page/6.jpg",
+    moocLink: "",
   },
   {
-    title: "Cryptography",
-    cardImage: "assets/images/education-page/udemy.png",
+    title: "API Designer",
+    cardImage: "assets/images/education-page/2.jpg",
     moocLink: "https://www.udemy.com/course/cryptography-for-beginners/",
   },
   {
-    title: "Machine Learning",
-    cardImage: "assets/images/education-page/coursera1.png",
-    moocLink: "https://www.coursera.org/learn/machine-learning",
+    title: "Using Tensorflow with amazon Segemaker",
+    cardImage: "assets/images/education-page/3.jpg",
+    moocLink: "",
   },
   {
-    title: "Introduction to HTML 5",
-    cardImage: "assets/images/education-page/udacity_logo.png",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
+    title: "Introduction to Search Engine Optimization",
+    cardImage: "assets/images/education-page/4.jpg",
+    moocLink: "",
   },
   {
-    title: "Introduction to CSS 3",
-    cardImage: "assets/images/education-page/udacity_logo.png",
-    moocLink: "https://www.udacity.com/course/intro-to-html-and-css--ud001",
+    title: "Server Development with Node, Express and MongoDB",
+    cardImage: "assets/images/education-page/5.jpg",
+    moocLink: "",
   },
   {
-    title: "Javascript",
-    cardImage: "assets/images/education-page/udacity_logo.png",
-    moocLink: "https://www.udacity.com/course/intro-to-javascript--ud803",
+    title: "C++ Porductivity Hack",
+    cardImage: "assets/images/education-page/1.jpg",
+    moocLink: "",
   },
   {
-    title: "Bootstrap 4",
-    cardImage: "assets/images/education-page/udemy.png",
-    moocLink: "https://www.udemy.com/course/bootstrap-4-tutorials/",
-  },
-  {
-    title: "Intro to React",
-    cardImage: "assets/images/education-page/EdX.png",
-    moocLink: "https://www.edx.org/learn/reactjs",
-  },
-  {
-    title: "Intro to React Native",
-    cardImage: "assets/images/education-page/coursera1.png",
-    moocLink: "https://www.coursera.org/lecture/react-native/introduction-to-react-native-Eax0D",
-  },
-  {
-    title: "NodeJS, Express and MongoDB",
-    cardImage: "assets/images/education-page/coursera1.png",
-    moocLink: "https://www.coursera.org/learn/server-side-nodejs",
-  },
-  {
-    title: "XML-AJAX",
-    cardImage: "assets/images/education-page/udemy.png",
-    moocLink: "https://www.udemy.com/course/xml-from-beginner-to-expert/",
-  },
-  {
-    title: "Data Structures & Algorithms",
-    cardImage: "assets/images/education-page/udacity_logo.png",
-    moocLink: "https://www.udacity.com/course/data-structures-and-algorithms-nanodegree--nd256",
-  },
+    title: "Python Facts For Java Developers",
+    cardImage: "assets/images/education-page/7.jpg",
+    moocLink: "",
+  }
 ];
 
 const experience = [
@@ -100,11 +75,11 @@ function showExperience() {
     if (currentItem === experience.length) {
       currentItem = 0;
     }
-      const item = experience[currentItem];
-      img.src = item.img;
-      currentItem++;
+    const item = experience[currentItem];
+    img.src = item.img;
+    currentItem++;
 
-    },
+  },
     3000);
 }
 
@@ -119,7 +94,7 @@ const showCards = () => {
                   <div class="content-overlay"></div>
                     <img src=${cardImage} class="card-img-top content-image">     
                   <div class="content-details fadeIn-bottom">
-                    <a href="${moocLink}" target="_blank"><i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: white;"></i></a>                                   
+                    <a ><i class="fa fa-info-circle fa-2x" aria-hidden="true" style="color: white;"></i></a>                                   
                   </div>
                 </div>
                 <div class="card-body">
@@ -173,7 +148,7 @@ document.addEventListener("DOMContentLoaded", showCards1);
 
 /* Timeline Section*/
 
-$(function(){
+$(function () {
 
   window.sr = ScrollReveal();
 
@@ -191,7 +166,7 @@ $(function(){
     });
 
   } else {
-    
+
     sr.reveal('.js--fadeInLeft', {
       origin: 'left',
       distance: '300px',
@@ -207,20 +182,20 @@ $(function(){
     });
 
   }
-  
-  sr.reveal('.js--fadeInLeft', {
-      origin: 'left',
-      distance: '300px',
-      easing: 'ease-in-out',
-      duration: 800,
-    });
 
-    sr.reveal('.js--fadeInRight', {
-      origin: 'right',
-      distance: '300px',
-      easing: 'ease-in-out',
-      duration: 800,
-    });
+  sr.reveal('.js--fadeInLeft', {
+    origin: 'left',
+    distance: '300px',
+    easing: 'ease-in-out',
+    duration: 800,
+  });
+
+  sr.reveal('.js--fadeInRight', {
+    origin: 'right',
+    distance: '300px',
+    easing: 'ease-in-out',
+    duration: 800,
+  });
 
 
 });
