@@ -6,10 +6,17 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
+    title: "Python Developer",
+    cardImage: "assets/images/experience-page/unisoft.jpg",
+    place: "Unisoft System Ltd",
+    time: "(December, 2021 - present)",
+    desp: "Developing ERP software using Odoo.",
+  },
+  {
     title: "RMA & Component Officer and Support Engineer",
     cardImage: "assets/images/experience-page/globalbrand.jpg",
     place: "Global Brand Pvt. Limited",
-    time: "(August, 2021 - present)",
+    time: "(August, 2021 - November, 2021)",
     desp: "",
   },
   {
