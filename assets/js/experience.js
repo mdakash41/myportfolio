@@ -7,7 +7,7 @@ const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
     title: "Python Developer",
-    cardImage: "assets/images/experience-page/unisoft.jpg",
+    cardImage: "assets/images/experience-page/unisoft.png",
     place: "Unisoft System Ltd",
     time: "(December, 2021 - present)",
     desp: "Developing ERP software using Odoo.",
